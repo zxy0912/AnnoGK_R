@@ -1,11 +1,25 @@
 Package: AnnoGKR
-Title: Annotation-informed GhostKnockoff
-Version: 0.0.0.9000
+Title: Annotation-Informed GhostKnockoff
+Version: 0.1.0
 Authors@R: 
-    person("Xiangyu", "Zhang", , "xiangyu.zhang@yale.edu", role = c("aut", "cre"))
-Description: Annotation-informed variable selection via knockoffs for summary statistics and an estimated correlation matrix.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person(given = "Xiangyu",
+           family = "Zhang",
+           role = c("aut", "cre"),
+           email = "xiangyu.zhang@yale.edu")
+Description: Implements annotation-informed variable selection using the GhostKnockoff framework. 
+    It allows for variable selection based on summary statistics and an estimated correlation matrix, 
+    incorporating prior annotation information to improve statistical power while controlling the 
+    False Discovery Rate.
+License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 8.0.0
+Imports: 
+    Matrix (>= 1.6-5),
+    Rdsdp (>= 1.0.6),
+    RSpectra (>= 0.16-2),
+    glmnet (>= 4.1.10),
+    knockoff (>= 0.3.6),
+    ghostbasil
+Remotes: 
+    JamesYang007/ghostbasil
