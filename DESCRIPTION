@@ -21,5 +21,3 @@ Imports:
     glmnet (>= 4.1.10),
     knockoff (>= 0.3.6),
     ghostbasil
-Remotes: 
-    JamesYang007/ghostbasil
