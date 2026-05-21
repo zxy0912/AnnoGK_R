@@ -1,4 +1,29 @@
-# GhostKnockoff Pipeline Example
+# Install AnnoGK
+
+## Create the conda environment:
+
+```bash
+conda env create -f AnnoGK.yml -n AnnoGKR_test
+conda activate AnnoGKR_test
+```
+
+## Install the required `ghostbasil` package
+
+```bash
+mkdir ghostbasil
+cd ghostbasil
+git clone https://github.com/szcf-weiya/ghostbasil
+cd ghostbasil
+R CMD INSTALL .
+```
+
+## Install AnnoGK
+
+```R
+remotes::install_github("zxy0912/AnnoGK_R", upgrade = "never")
+```
+
+# AnnoGK Pipeline Example
 
 This example demonstrates how to use the `AnnoGKR` package to perform variable selection on simulated GWAS/TWAS data, comparing the performance of standard GhostKnockoff against annotation-informed versions.
 
