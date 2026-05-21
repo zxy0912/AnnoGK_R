@@ -1,0 +1,11 @@
+Package: AnnoGKR
+Title: Annotation-informed GhostKnockoff
+Version: 0.0.0.9000
+Authors@R: 
+    person("Xiangyu", "Zhang", , "xiangyu.zhang@yale.edu", role = c("aut", "cre"))
+Description: Annotation-informed variable selection via knockoffs for summary statistics and an estimated correlation matrix.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0

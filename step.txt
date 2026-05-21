@@ -1,0 +1,11 @@
+# Step 1:
+conda env create -f AnnoGKR.yml
+
+# Step 2:
+conda activate AnnoGK_env
+
+# Step 3:
+cd ~/ghostbasil_weiya/ghostbasil/
+R
+remotes::install_local(".", upgrade = "never")
+
